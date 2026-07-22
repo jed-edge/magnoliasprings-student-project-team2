@@ -459,3 +459,314 @@ td {
 .card:hover {
   transform: scale(2.05);
 }
+
+/* MAGNOLIA FALL FESTIVAL VISITOR INFO PAGE*/
+
+.visitor-section {
+    margin-top: 45px;
+}
+
+/* Festival Information Cards */
+
+.visitor-summary-grid {
+    margin-top: 25px;
+}
+
+.visitor-summary-card {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+}
+
+.visitor-summary-card img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.visitor-card-info h3 {
+    margin: 0 0 8px;
+    text-align: left;
+}
+
+.visitor-card-info p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Directions and Parking */
+
+.visitor-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 25px auto 45px;
+}
+
+.visitor-info-card {
+    padding: 24px;
+    background-color: #fffaf0;
+    border: 3px solid #547642;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(107, 68, 35, 0.15);
+}
+
+.visitor-info-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #6b4423;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+.visitor-info-card p {
+    line-height: 1.6;
+}
+
+.visitor-info-card address {
+    margin: 18px 0;
+    color: #547642;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* What to Bring Cards */
+
+.visitor-list-card {
+    text-align: left;
+}
+
+.visitor-list-card h3 {
+    text-align: center;
+}
+
+.visitor-list-card ul {
+    margin: 15px 0 0;
+    padding-left: 22px;
+}
+
+.visitor-list-card li {
+    margin-bottom: 9px;
+    line-height: 1.4;
+}
+
+/* Accessibility Section */
+
+.visitor-highlight {
+    display: grid;
+    grid-template-columns: 80px 1fr 90px;
+    align-items: center;
+    gap: 22px;
+    margin: 25px auto 45px;
+    padding: 25px;
+    background-color: #fae6fa;
+    border: 3px solid #547642;
+    text-align: center;
+}
+
+.visitor-highlight-info h3 {
+    margin-top: 0;
+    color: #6b4423;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.visitor-highlight-info p {
+    line-height: 1.6;
+}
+
+.visitor-highlight-info a {
+    color: #6b4423;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.visitor-highlight-image {
+    display: block;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Frequently Asked Questions */
+
+.faq-list {
+    display: grid;
+    gap: 14px;
+    margin: 25px auto 45px;
+}
+
+.faq-list details {
+    background-color: #fffaf0;
+    border: 3px solid #547642;
+}
+
+.faq-list summary {
+    padding: 16px 20px;
+    background-color: #fae6fa;
+    color: #6b4423;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.faq-list summary:hover,
+.faq-list summary:focus {
+    background-color: #ff99b4;
+}
+
+.faq-list details p {
+    margin: 0;
+    padding: 18px 20px;
+    line-height: 1.6;
+}
+
+/* Smaller Hero Images */
+
+.hero-decor img {
+    width: 105px;
+    height: 135px;
+    object-fit: contain;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+    .visitor-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .visitor-highlight {
+        grid-template-columns: 1fr;
+    }
+
+    .visitor-highlight-image {
+        width: 65px;
+        height: 65px;
+    }
+
+    .hero-decor img {
+        width: 80px;
+        height: 105px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .visitor-summary-card {
+        grid-template-columns: 50px 1fr;
+        gap: 12px;
+    }
+
+    .visitor-summary-card img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .visitor-card-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .visitor-info-card,
+    .visitor-highlight {
+        padding: 18px;
+    }
+
+    .faq-list summary {
+        padding: 14px 16px;
+    }
+
+    .faq-list details p {
+        padding: 16px;
+    }
+
+    .hero-decor img {
+        width: 60px;
+        height: 80px;
+    }
+}
+ /* Visitor SMS Form */
+
+.sms-form {
+    max-width: 760px;
+    margin: 25px auto 45px;
+    padding: 26px;
+    background-color: #fffaf0;
+    border: 3px solid #547642;
+    border-radius: 8px;
+}
+
+.sms-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.sms-form .form-group {
+    margin-bottom: 18px;
+}
+
+.sms-form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #6b4423;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.sms-form input,
+.sms-form textarea {
+    width: 100%;
+    padding: 11px;
+    border: 2px solid #547642;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.sms-form input:focus,
+.sms-form textarea:focus {
+    outline: 3px solid #ff99b4;
+    outline-offset: 2px;
+}
+
+.sms-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sms-consent input {
+    width: auto;
+    margin-top: 4px;
+}
+
+.sms-consent label {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.sms-form .submit-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .sms-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .sms-form {
+        padding: 18px;
+    }
+}
+/* END MAGNOLIA FALL FESTIVAL VISITOR INFO PAGE */
