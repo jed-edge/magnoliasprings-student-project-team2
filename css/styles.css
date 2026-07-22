@@ -297,3 +297,96 @@ body {
   }
 }
 /*END MAGNOLIA FALL FESTIVAL HOMEPAGE*/
+
+/* MAGNOLIA FALL FESTIVAL SCHEDULE PAGE */
+
+.schedule-section {
+  margin-top: 28px;
+}
+
+.schedule-introduction {
+  width: 86%;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.schedule-introduction p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.schedule-day {
+  margin-top: 42px;
+}
+
+.schedule-day .wide-heading {
+  width: min(88%, 560px);
+  margin-bottom: 22px;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.schedule-card {
+  padding: 22px;
+  background-color: var(--lavender-veil);
+  border: 3px solid var(--fern);
+  box-shadow: 0 4px 10px rgba(107, 68, 35, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(107, 68, 35, 0.22);
+}
+
+.schedule-card h3 {
+  margin: 14px 0 8px;
+  color: var(--brown-bark);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+}
+
+.schedule-card p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.schedule-time {
+  display: inline-block;
+  padding: 7px 13px;
+  background-color: var(--fern);
+  color: var(--floral-white);
+  border: 2px solid var(--cotton-candy);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.schedule-location {
+  margin: 8px 0 12px !important;
+  color: var(--fern);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 760px) {
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-introduction {
+    width: 100%;
+  }
+
+  .schedule-day .wide-heading {
+    width: 100%;
+  }
+
+  .schedule-card {
+    padding: 18px;
+  }
+}
+/* END MAGNOLIA FALL FESTIVAL SCHEDULE PAGE */
