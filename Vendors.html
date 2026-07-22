@@ -1,0 +1,205 @@
+<!--Team 2-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Vendors - Magnolia City Fall Festival</title>
+        <link rel="stylesheet" href="css/styles1.css">
+    </head>
+    <body>
+        <!-- Required Educational Notice Banner -->
+        <div class="student-banner" role="status" aria-label="Educational Notice">
+            <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
+        </div><!--End Required Educational Notice Banner -->
+ 
+        <div class="page">
+ 
+            <!-- Header: logo + navigation -->
+            <header class="site-header">
+                <a href="index.html" class="logo">
+                    <span class="logo-image">
+                        <img src="images/fall_festival_logo.png" alt="Magnolia City Fall Festival logo">
+                    </span>
+                </a>
+ 
+                <nav aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="vendors.html" class="active">Vendors</a>
+                    <a href="#">Artists</a>
+                    <a href="#">Visitor Info</a>
+                </nav>
+            </header><!--End Header -->
+ 
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-decor">
+                    <img src="images/street_lamp.png" alt="">
+                </div>
+ 
+                <div class="hero-text">
+                    <p class="hero-tagline">Our</p>
+                    <h1>Vendors</h1>
+                    <p class="hero-banner">Discover Amazing Local Businesses &amp; Makers</p>
+                    <p class="hero-date">October 11 &amp; 12, 2024 &nbsp;|&nbsp; Downtown Magnolia Springs, GA</p>
+                </div>
+ 
+                <div class="hero-decor">
+                    <img src="images/pumpkin_sign.png" alt="">
+                </div>
+            </section><!--End Hero -->
+ 
+            <!-- Vendor Categories -->
+            <section>
+                <h2 class="ribbon-heading wide">Vendor Categories</h2>
+ 
+                <ul class="card-grid">
+                    <li class="card card-icon">
+                        <img src="images/food_truck_icon.png" alt="Food truck icon">
+                        <h3>Food Trucks</h3>
+                        <p>Delicious eats and sweet treats from local food trucks.</p>
+                    </li>
+                    <li class="card card-icon">
+                        <img src="images/art_icon.png" alt="Paint palette icon">
+                        <h3>Arts &amp; Crafts</h3>
+                        <p>Handmade goods, unique creations, and artisan treasures.</p>
+                    </li>
+                    <li class="card card-icon">
+                        <img src="images/star_icon.png" alt="Farmers market icon">
+                        <h3>Farmers Market</h3>
+                        <p>Fresh produce, baked goods, flowers, and more from local growers.</p>
+                    </li>
+                    <li class="card card-icon">
+                        <img src="images/vendor_icon.png" alt="Shop bag icon">
+                        <h3>Local Shops</h3>
+                        <p>Boutique finds, home decor, and specialty products.</p>
+                    </li>
+                </ul>
+            </section><!--End Vendor Categories -->
+ 
+            <!-- Featured Vendors -->
+            <section>
+                <h2 class="ribbon-heading wide">Featured Vendors</h2>
+ 
+                <ul class="card-grid">
+                    <li class="card card-photo">
+                        <img src="images/f1.png" alt="Featured vendor photo coming soon">
+                        <h3>Magnolia Smoke & Grill</h3>
+                        <p>A family-owned barbecue truck serving smoked meats and southern comfort sides. Offers: pulled pork sandwiches, smoked brisket plates, mac and cheese, sweet tea.</p>
+                    </li>
+                    <li class="card card-photo">
+                        <img src="images/f2.png" alt="Featured vendor photo coming soon">
+                        <h3>Willow & Vine Handmade</h3>
+                        <p>A local artisan booth selling handwoven home goods and seasonal decor. Offers: woven baskets, ceramic mugs, dried flower wreaths, hand-carved wooden signs.</p>
+                    </li>
+                    <li class="card card-photo">
+                        <img src="images/f3.png" alt="Featured vendor photo coming soon">
+                        <h3>Sunny Acres Farm</h3>
+                        <p>A family farm stand offering fresh seasonal produce and homemade preserves. Offers: pumpkins, apples, honey, jams, fresh-cut flowers.</p>
+                    </li>
+                    <li class="card card-photo">
+                        <img src="images/f4.png" alt="Featured vendor photo coming soon">
+                        <h3>Magnolia Trading Co.</h3>
+                        <p>A boutique shop offering home decor, candles, and specialty gifts. Offers: soy candles, home decor signs, seasonal wreaths, gift sets.</p>
+                    </li>
+                </ul>
+            </section><!--End Featured Vendors -->
+ 
+            <!-- Vendor Sign-Up Form -->
+            <section>
+                <h2 class="ribbon-heading wide">Interested in Becoming a Vendor?</h2>
+                <p class="form-intro">Vendor Sign-Up Form</p>
+ 
+                <div class="form-decor">
+                    <img src="images/leaves_left.png" alt="">
+ 
+                    <form class="vendor-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="business-name">Business Name *</label>
+                                <input type="text" id="business-name" name="business-name" placeholder="Your business name" required>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="contact-name">Contact Name *</label>
+                                <input type="text" id="contact-name" name="contact-name" placeholder="Full name" required>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(000) 000-0000" required>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="vendor-type">Vendor Type *</label>
+                                <select id="vendor-type" name="vendor-type" required>
+                                    <option value="" selected disabled>Select a type</option>
+                                    <option value="food-truck">Food Truck</option>
+                                    <option value="arts-crafts">Arts &amp; Crafts</option>
+                                    <option value="farmers-market">Farmers Market</option>
+                                    <option value="local-shop">Local Shop</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="products">Products / Services *</label>
+                                <input type="text" id="products" name="products" placeholder="What do you offer?" required>
+                            </div>
+ 
+                            <div class="form-group">
+                                <label for="booth-size">Booth Size or Booth Needs *</label>
+                                <select id="booth-size" name="booth-size" required>
+                                    <option value="" selected disabled>Select booth size</option>
+                                    <option value="standard">Standard (10x10)</option>
+                                    <option value="large">Large (10x20)</option>
+                                    <option value="electricity">Electricity Needed</option>
+                                    <option value="none">No Booth Needed</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+ 
+                        <div class="form-group">
+                            <label for="notes">Additional Notes / Message</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Tell us more about your business or any special needs."></textarea>
+                        </div>
+ 
+                        <button type="submit" class="submit-btn">Submit Application</button>
+                    </form>
+ 
+                    <img src="images/fall_gazebo.png" alt="">
+                </div>
+            </section><!--End Vendor Sign-Up Form -->
+ 
+            <!-- Footer: quick links + copyright -->
+            <footer class="site-footer">
+                <div class="footer-top">
+                    <img src="images/pumpkins_left.png" alt="" class="footer-decor">
+ 
+                    <div>
+                        <p class="footer-label">Quick Links</p>
+                        <nav class="footer-links" aria-label="Footer navigation">
+                            <a href="index.html">Home</a> |
+                            <a href="schedule.html">Schedule</a> |
+                            <a href="vendors.html">Vendors</a> |
+                            <a href="#">Artists</a> |
+                            <a href="#">Visitor Info</a>
+                        </nav>
+                    </div>
+ 
+                    <img src="images/pumpkins_right.png" alt="" class="footer-decor">
+                </div>
+ 
+                <p class="footer-bottom">Copyright, Magnolia City, GA 2024 Final Project Team 2</p>
+            </footer><!--End Footer -->
+ 
+        </div>
+    </body>
+</html>
