@@ -78,19 +78,37 @@ body {
 
 .festival-nav {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   margin-bottom: 34px;
   border: 2px solid var(--brown-bark);
 }
 
 .festival-nav a {
-  padding: 11px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 6px;
   background-color: var(--cotton-candy);
   color: var(--fern);
   border-right: 2px solid var(--brown-bark);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
   font-weight: 800;
   text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.festival-nav a:last-child {
+  border-right: 0;
+}
+
+.festival-nav a:hover,
+.festival-nav a:focus,
+.festival-nav a.active {
+  background-color: var(--lavender-veil);
+  color: var(--brown-bark);
 }
 
 .festival-nav a:last-child {
