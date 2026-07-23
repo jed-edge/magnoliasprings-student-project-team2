@@ -1,16 +1,48 @@
 /*
-Brown Bark	#6B4423
-Fern	#547642
+Brown Bark	    #6B4423
+Fern	        #547642
 Lavender Veil	#FAE6FA
 Floral White	#FFFAF0
 Cotton Candy	#FF99B4
 */
 
+/*REQUIRED CSS FOR STUDENT BANNER*/
+.student-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffcc00; 
+  color: #1a1a1a; 
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 99999; 
+}
+
+.student-banner p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: #fffaf5;
+    background-color: #FFFAF0;
     color: #17375e;
 }
 
+/* Makes the logo smaller on phones */
+@media screen and (max-width: 576px) {
+    .navbar-logo {
+        width: 230px;
+    }
+}
+
+/* Controls the size of the logo inside the navbar */
+.navbar-logo {
+    width: 320px;
+    height: auto;
+}
 
 /*These styles give the navbar a light background.*/
 .festival-navbar {
@@ -38,12 +70,15 @@ body {
     border-bottom: 2px solid #ed4f6c;
 }
 
+/* Styles the View Full Schedule button */
+.schedule-button {
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
 /*This section contains the main page heading, introduction, and schedule button.*/
 .artists-hero {
-    background-image: url("../images/fall_festival_home.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     padding: 50px 20px;
     text-align: center;
 }
@@ -55,12 +90,12 @@ body {
     margin-bottom: 0;
 }
 
-.artists-hero h1 {
-    color: #17375e;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 72px;
-    font-weight: bold;
-    text-transform: uppercase;
+.artist-hero-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .hero-banner {
@@ -123,16 +158,19 @@ body {
     height: 100%;
     overflow: hidden;
     text-align: center;
+    border: 3px solid #547642;
 }
 
 .artist-image {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    border: 3px solid #547642;
 }
 
 .artist-card-body {
     padding: 20px;
+    border: 3px solid #547642;
 }
 
 .artist-card h3 {
@@ -156,9 +194,9 @@ body {
 
 .content-box {
     background-color: #fffdfb;
-    border: 1px solid #ead9dc;
     border-radius: 10px;
     padding: 20px;
+    border: 3px solid #547642;
 }
 
 
@@ -170,12 +208,13 @@ body {
     height: 100%;
     padding: 10px;
     text-align: center;
+    border: 3px solid #547642;
 }
 
 .visual-artist-card img {
     width: 100%;
     height: 130px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 10px;
 }
 
@@ -200,6 +239,7 @@ body {
     margin-top: 20px;
     padding: 20px;
     text-align: center;
+    border: 3px solid #547642;
 }
 
 .questions-box h2 {
@@ -216,6 +256,9 @@ body {
 
 
 /*These styles control the form heading and form fields.*/
+.form-application {
+    border: 3px solid #547642;
+}
 .form-introduction {
     text-align: center;
 }
