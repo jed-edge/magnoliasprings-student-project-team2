@@ -1,0 +1,284 @@
+/*
+Brown Bark	#6B4423
+Fern	#547642
+Lavender Veil	#FAE6FA
+Floral White	#FFFAF0
+Cotton Candy	#FF99B4
+*/
+
+body {
+    background-color: #fffaf5;
+    color: #17375e;
+}
+
+
+/*These styles give the navbar a light background.*/
+.festival-navbar {
+    background-color: #fffaf5;
+    border-bottom: 1px solid #ead9dc;
+}
+
+.festival-navbar .navbar-brand {
+    color: #315c28;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+}
+
+.festival-navbar .nav-link {
+    color: #17375e;
+    margin-left: 20px;
+}
+
+.festival-navbar .nav-link:hover {
+    color: #ed4f6c;
+}
+
+.festival-navbar .nav-link.active {
+    color: #ed4f6c;
+    border-bottom: 2px solid #ed4f6c;
+}
+
+/*This section contains the main page heading, introduction, and schedule button.*/
+.artists-hero {
+    background-image: url("../images/fall_festival_home.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-small-heading {
+    color: #ed4f6c;
+    font-family: cursive;
+    font-size: 48px;
+    margin-bottom: 0;
+}
+
+.artists-hero h1 {
+    color: #17375e;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 72px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero-banner {
+    background-color: #315c28;
+    color: white;
+    max-width: 500px;
+    margin: 15px auto 25px;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/*This class is used for the schedule and submit buttons.*/
+.festival-button {
+    background-color: #315c28;
+    border: 2px solid #21471d;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.festival-button:hover {
+    background-color: #21471d;
+    border-color: #21471d;
+    color: white;
+}
+
+
+/*These are the green headings used above each section.*/
+.section-heading {
+    background-color: #315c28;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    max-width: 350px;
+    margin: 0 auto 25px;
+    padding: 7px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*This section contains the four musical performer cards.*/
+.featured-music {
+    padding: 40px 0;
+}
+
+.artist-card {
+    background-color: #fffafb;
+    border: 2px solid #ead9dc;
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.artist-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.artist-card-body {
+    padding: 20px;
+}
+
+.artist-card h3 {
+    color: #382c2d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.artist-category {
+    color: #ed4f6c;
+    font-weight: bold;
+}
+
+
+/*This section contains the visual artists and form.*/
+.artist-details {
+    padding: 20px 0 50px;
+}
+
+.content-box {
+    background-color: #fffdfb;
+    border: 1px solid #ead9dc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/*These styles control the four smaller artist cards.*/
+.visual-artist-card {
+    background-color: #fffaf5;
+    border: 1px solid #ddd1ca;
+    border-radius: 8px;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.visual-artist-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.visual-artist-card h3 {
+    color: #382c2d;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.visual-artist-card p {
+    font-size: 14px;
+}
+
+
+/*This box gives visitors a way to contact the festival.*/
+.questions-box {
+    background-color: #fff7f8;
+    border: 1px solid #ead9dc;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.questions-box h2 {
+    color: #ed4f6c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.questions-box a {
+    color: #17375e;
+    font-weight: bold;
+}
+
+
+/*These styles control the form heading and form fields.*/
+.form-introduction {
+    text-align: center;
+}
+
+.form-title {
+    color: #ed4f6c;
+    border-bottom: 1px solid #ed9eb0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    margin: 25px 0;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-label {
+    color: #17375e;
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    background-color: #fffdfb;
+    border: 1px solid #d9cfca;
+}
+
+/* Changes the border color when a visitor clicks a field */
+.form-control:focus,
+.form-select:focus {
+    border-color: #ed4f6c;
+    box-shadow: 0 0 5px rgba(237, 79, 108, 0.4);
+}
+
+
+/*These styles control the bottom section of the page.*/
+.festival-footer {
+    background-color: #315c28;
+    color: white;
+    padding: 10px 0;
+}
+
+
+/*These styles apply when the screen is 767 pixels wide or smaller, such as a phone or small tablet.*/
+@media screen and (max-width: 767px) {
+
+    /* Makes the main page heading smaller on phones */
+    .artists-hero h1 {
+        font-size: 48px;
+    }
+
+    /* Makes the decorative word smaller on phones */
+    .hero-small-heading {
+        font-size: 38px;
+    }
+
+    /* Makes the section heading fit smaller screens */
+    .section-heading {
+        width: 100%;
+    }
+
+    /* Reduces spacing inside the hero section */
+    .artists-hero {
+        padding: 35px 15px;
+    }
+
+}
