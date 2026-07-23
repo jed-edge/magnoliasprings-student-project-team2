@@ -59,16 +59,28 @@ body {
 .festival-navbar .nav-link {
     color: #17375e;
     margin-left: 20px;
+    font-weight: bold;
 }
 
-.festival-navbar .nav-link:hover {
-    color: #ed4f6c;
+.festival-navbar .nav-link:hover
+.festival-navbar .nav-link:focus {
+    color: #6B4423;
 }
 
 .festival-navbar .nav-link.active {
-    color: #ed4f6c;
+    color: #6b4423;
     border-bottom: 2px solid #ed4f6c;
 }
+
+.hero-banner,
+.section-heading,
+.festival-button,
+.schedule-button,
+.festival-footer,{
+    background-color: #315c28;
+    color: #ffffff;
+}
+
 
 /* Styles the View Full Schedule button */
 .schedule-button {
@@ -182,7 +194,7 @@ body {
 }
 
 .artist-category {
-    color: #ed4f6c;
+    color: #17375e;
     font-weight: bold;
 }
 
@@ -243,7 +255,7 @@ body {
 }
 
 .questions-box h2 {
-    color: #ed4f6c;
+    color: #6B4423;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 25px;
     text-transform: uppercase;
@@ -252,6 +264,7 @@ body {
 .questions-box a {
     color: #17375e;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -264,7 +277,7 @@ body {
 }
 
 .form-title {
-    color: #ed4f6c;
+    color: #6B4423;
     border-bottom: 1px solid #ed9eb0;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 22px;
