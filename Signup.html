@@ -1,0 +1,291 @@
+<!--Melanie Eaton, Logan Hitz-->
+<!-- ITEC 2380 Final Team Project -->
+<!-- Magnolia City Fall Festival Tickets Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets | Magnolia City Fall Festival</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="js/tickets.js" defer></script>
+</head>
+
+<body>
+    <!-- Required Educational Notice Banner -->
+    <div class="student-banner" role="status" aria-label="Educational Notice">
+        <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
+    </div>
+    <!-- End Required Educational Notice Banner -->
+
+    <main class="ticket-page">
+        <header class="site-header">
+            <a class="logo" href="index.html">
+                <img src="images/magnolia-logo.png" alt="Magnolia City Fall Festival">
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="Schedule.html">Schedule</a>
+                <a href="Vendors.html">Vendors</a>
+                <a href="Artists.html">Artists</a>
+                <a href="VisitorInfo.html">Visitor Info</a>
+                <a class="active" href="Signup.html">Buy Tickets</a>
+            </nav>
+        </header>
+
+        <section class="ticket-hero" aria-labelledby="ticket-title">
+            <img class="hero-art" src="images/visitor-left-decor.png" alt="">
+
+            <div class="hero-copy">
+                <p class="script-title">Buy</p>
+                <h1 id="ticket-title">TICKETS</h1>
+                <p class="hero-banner">TWO DAYS OF FAMILY, FUN &amp; COMMUNITY</p>
+                <div class="hero-details">
+                    <span>October 11 &amp; 12, 2024</span>
+                    <span>Downtown Magnolia Springs, GA</span>
+                </div>
+            </div>
+
+            <img class="hero-art" src="images/visitor-right-decor.png" alt="">
+        </section>
+
+        <p class="page-intro">
+            Secure your spot at the Magnolia City Fall Festival. Select your tickets,
+            enter attendee information, and review your order before completing this
+            educational prototype form.
+        </p>
+
+        <div class="ticket-layout">
+            <form class="ticket-form" id="ticket-form">
+                <p class="prototype-note">
+                    This is a classroom prototype. Do not enter real payment information.
+                </p>
+
+                <fieldset>
+                    <legend>1. Select Tickets</legend>
+
+                    <div class="ticket-table" role="group" aria-label="Ticket quantities">
+                        <div class="ticket-row ticket-heading" aria-hidden="true">
+                            <span>Ticket Type</span>
+                            <span>Price</span>
+                            <span>Quantity</span>
+                        </div>
+
+                        <div class="ticket-row">
+                            <label for="general">General Admission (Ages 13+)</label>
+                            <span>$15.00</span>
+                            <select id="general" name="general" data-price="15">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="ticket-row">
+                            <label for="child">Child Admission (Ages 6–12)</label>
+                            <span>$8.00</span>
+                            <select id="child" name="child" data-price="8">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="ticket-row">
+                            <label for="kids">Kids 5 &amp; Under</label>
+                            <span>FREE</span>
+                            <select id="kids" name="kids" data-price="0">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="ticket-row">
+                            <label for="weekend">Weekend Pass (Ages 13+)</label>
+                            <span>$25.00</span>
+                            <select id="weekend" name="weekend" data-price="25">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                        <div class="ticket-row">
+                            <label for="vip">VIP Experience (Ages 13+)</label>
+                            <span>$50.00</span>
+                            <select id="vip" name="vip" data-price="50">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="vip-note">
+                        VIP Experience includes priority entry, reserved seating, and a festival swag bag.
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Attendee Information</legend>
+
+                    <div class="form-grid three-columns">
+                        <div class="form-group">
+                            <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+                            <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                            <input id="email" name="email" type="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(000) 000-0000" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Payment Information</legend>
+
+                    <div class="form-group">
+                        <label for="card-number">Demo Card Number <span aria-hidden="true">*</span></label>
+                        <input id="card-number" name="card-number" type="text"
+                               inputmode="numeric" placeholder="1234 5678 9012 3456"
+                               aria-describedby="payment-warning" required>
+                    </div>
+
+                    <div class="form-grid three-columns">
+                        <div class="form-group">
+                            <label for="expiration">Expiration Date <span aria-hidden="true">*</span></label>
+                            <input id="expiration" name="expiration" type="text"
+                                   inputmode="numeric" placeholder="MM/YY" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cvv">CVV <span aria-hidden="true">*</span></label>
+                            <input id="cvv" name="cvv" type="text"
+                                   inputmode="numeric" placeholder="123" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zip">Billing ZIP Code <span aria-hidden="true">*</span></label>
+                            <input id="zip" name="zip" type="text"
+                                   inputmode="numeric" autocomplete="postal-code" required>
+                        </div>
+                    </div>
+
+                    <p id="payment-warning" class="payment-warning">
+                        Prototype only—no payment will be processed or stored.
+                    </p>
+
+                    <label class="agreement">
+                        <input type="checkbox" required>
+                        <span>I agree to the ticket terms and refund policy.</span>
+                    </label>
+
+                    <button class="purchase-button" type="submit">Complete Purchase</button>
+                    <p class="secure-note">Your information is used only for this classroom demonstration.</p>
+                </fieldset>
+            </form>
+
+            <aside class="ticket-sidebar" aria-label="Ticket order information">
+                <section class="side-card order-card">
+                    <h2>Order Summary</h2>
+                    <div class="ticket-symbol" aria-hidden="true">🎟</div>
+                    <p id="empty-order">Your order is empty. Select tickets to get started.</p>
+                    <ul id="order-items" class="order-items" aria-live="polite"></ul>
+                    <div class="total-row">
+                        <span>Total:</span>
+                        <strong id="order-total">$0.00</strong>
+                    </div>
+                </section>
+
+                <section class="side-card">
+                    <h2>Event Details</h2>
+                    <dl class="event-list">
+                        <div>
+                            <dt>Date</dt>
+                            <dd>October 11 &amp; 12, 2024</dd>
+                        </div>
+                        <div>
+                            <dt>Hours</dt>
+                            <dd>Friday: 12 PM–6 PM<br>Saturday: 12 PM–5 PM</dd>
+                        </div>
+                        <div>
+                            <dt>Location</dt>
+                            <dd>Downtown Magnolia Springs, GA</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <section class="side-card">
+                    <h2>Why Buy in Advance?</h2>
+                    <ul class="benefit-list">
+                        <li>Skip the ticket line.</li>
+                        <li>Save time at the entrance.</li>
+                        <li>Reserve your spot early.</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+
+        <section class="bottom-info" aria-label="Additional ticket information">
+            <article>
+                <h2>No Refunds</h2>
+                <p>All ticket sales are final. The festival will continue rain or shine.</p>
+            </article>
+
+            <article>
+                <h2>Questions?</h2>
+                <p>Email <a href="mailto:fall.festival@magnoliacityga.com">fall.festival@magnoliacityga.com</a>.</p>
+            </article>
+
+            <article>
+                <h2>Support Local</h2>
+                <p>Thank you for supporting our community, performers, and local businesses.</p>
+            </article>
+        </section>
+
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <nav aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <span>|</span>
+                <a href="Schedule.html">Schedule</a>
+                <span>|</span>
+                <a href="Vendors.html">Vendors</a>
+                <span>|</span>
+                <a href="Artists.html">Artists</a>
+                <span>|</span>
+                <a href="VisitorInfo.html">Visitor Info</a>
+                <span>|</span>
+                <a href="Signup.html">Buy Tickets</a>
+            </nav>
+        </section>
+
+        <footer class="site-footer">
+            <p>Copyright © Magnolia City, GA 2026 Final Project Team 2</p>
+        </footer>
+    </main>
+</body>
+</html>
