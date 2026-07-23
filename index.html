@@ -1,103 +1,182 @@
-<!--Melanie Eaton, Logan Hitz-->
+<!-- Melanie Eaton, Logan Hitz -->
 <!-- ITEC 2380 Final Team Project -->
-<!-- Magnolia City Fall Festival HomePage -->
+<!-- Magnolia City Fall Festival Homepage -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <!-- Required Educational Notice Banner -->
-        <div class="student-banner" role="status" aria-label="Educational Notice">
-            <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
-        </div><!--End Required Educational Notice Banner -->
-        <main class="festival-page">
-            <header class="festival-header">
-                <p class="city-presents">The City of Magnolia Presents:</p>
-                <h1>1st Annual Fall Festival!</h1>
 
-                <nav class="festival-nav" aria-label="Main navigation">
-                    <a class="active" href="index.html">Home</a>
-                    <a href="Schedule.html">Schedule</a>
-                    <a href="Vendors.html">Vendors</a>
-                    <a href="artist.html">Artists</a>
-                    <a href="Visitor info.html">Visitor Info</a>
-                    <a href="BuyTickets.html">Buy Tickets</a>
-                </nav>
-            </header>
-            <section class="festival-poster">
-                <img src="images/fall-festival-poster.png"
-                     alt="Magnolia City Fall Festival poster with pumpkins, vendors, food, music, and family activities">
-            </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <section class="festival-section">
-                <h2 class="festival-heading">What?</h2>
-                <div class="festival-box">
+    <title>Magnolia City Fall Festival</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Required Educational Notice Banner -->
+    <div class="student-banner" role="status" aria-label="Educational Notice">
+        <p>
+            <strong>Notice:</strong>
+            This is a fictional student project for educational purposes only.
+        </p>
+    </div>
+    <!-- End Required Educational Notice Banner -->
+
+    <main class="festival-page">
+
+        <header class="festival-header">
+
+            <div class="city-presents">
+                The City of Magnolia Presents:
+            </div>
+
+            <h1>1st Annual Fall Festival!</h1>
+
+            <nav class="festival-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="Schedule.html">Schedule</a>
+                <a href="Vendors.html">Vendors</a>
+                <a href="Artists.html">Artists</a>
+                <a href="VisitorInfo.html">Visitor Info</a>
+                <a href="BuyTickets.html">Buy Tickets</a>
+            </nav>
+
+        </header>
+
+        <figure class="festival-poster">
+            <img
+                src="Images/fall-festival-poster.png"
+                alt="Magnolia City Fall Festival poster featuring pumpkins, vendors, food, live music, and family activities">
+        </figure>
+
+        <section class="festival-section" aria-labelledby="what-heading">
+            <h2 id="what-heading" class="festival-heading">What?</h2>
+
+            <div class="festival-box">
+                <p>
+                    Celebrate the beauty of autumn in Magnolia Springs!
+                    Join us for two days of live music, delicious food trucks,
+                    local artisans, family activities, and a vibrant farmers'
+                    market.
+                </p>
+            </div>
+        </section>
+
+        <section class="festival-details" aria-label="Festival date and location">
+
+            <article>
+                <h2 class="festival-heading">When?</h2>
+
+                <div class="festival-box detail-box">
+                    <h3>Friday, October 11</h3>
+                    <p>12:00 p.m. – 6:00 p.m.</p>
+
+                    <h3>Saturday, October 12</h3>
+                    <p>12:00 p.m. – 5:00 p.m.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="festival-heading">Where?</h2>
+
+                <div class="festival-box detail-box">
                     <p>
-                        Celebrate the beauty of autumn in Magnolia Springs!
-                        Join us for two days of live music, delicious food trucks,
-                        local artisans, family activities, and a vibrant farmers' market.
+                        The festival will be held at Magnolia Springs City Park
+                        in Downtown Magnolia Springs.
                     </p>
+
+                    <address>
+                        1214 Park Road<br>
+                        Magnolia Springs, GA 30001
+                    </address>
                 </div>
-            </section>
+            </article>
 
-            <section class="festival-details">
-                <article>
-                    <h2 class="festival-heading">When?</h2>
-                    <div class="festival-box detail-box">
-                        <p><strong>Friday, October 11:</strong> 12:00 p.m. - 6:00 p.m.</p>
-                        <p><strong>Saturday, October 12:</strong> 12:00 p.m. - 5:00 p.m.</p>
-                    </div>
-                </article>
+        </section>
 
-                <article>
-                    <h2 class="festival-heading">Where?</h2>
-                    <div class="festival-box detail-box">
-                        <p>
-                            The festival will be held at Magnolia Springs City Park
-                            in Downtown Magnolia Springs.
-                        </p>
-                        <p><strong>1214 Park Rd, Magnolia Springs, GA 30001</strong></p>
-                    </div>
-                </article>
-            </section>
+        <section class="festival-section attractions-section" aria-labelledby="attractions-heading">
 
-            <section class="festival-section attractions-section">
-                <h2 class="festival-heading wide-heading">Featured Attractions:</h2>
+            <h2 id="attractions-heading" class="festival-heading wide-heading">
+                Featured Attractions
+            </h2>
 
-                <div class="attractions-grid">
-                    <a href="#" class="attraction-card">Live Music!</a>
-                    <a href="#" class="attraction-card">Food Trucks!</a>
-                    <a href="#" class="attraction-card center-attraction">Arts &amp; Crafts!</a>
-                    <a href="#" class="attraction-card">Games!</a>
-                    <a href="#" class="attraction-card">Farmer's Market</a>
-                </div>
-            </section>
+            <div class="attractions-grid">
+                <a href="Artists.html" class="attraction-card">
+                    Live Music
+                </a>
 
-            <section class="festival-section contact-section">
-                <h2 class="festival-heading contact-heading">Questions or Special Requests?</h2>
+                <a href="Vendors.html" class="attraction-card">
+                    Food Trucks
+                </a>
 
-                <div class="festival-box contact-box">
-                    <p>Feel free to contact us at:</p>
-                    <a href="mailto:fall.festival@magnoliacityga.com">
-                        fall.festival@magnoliacityga.com
-                    </a>
-                </div>
+                <a href="Vendors.html" class="attraction-card center-attraction">
+                    Arts &amp; Crafts
+                </a>
 
-                <p class="follow-text">Follow the festival on social media for updates.</p>
+                <a href="Schedule.html" class="attraction-card">
+                    Games
+                </a>
 
-                <div class="social-links">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
-                    <a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer">Instagram</a>
-                </div>
-            </section>
+                <a href="Vendors.html" class="attraction-card">
+                    Farmers' Market
+                </a>
+            </div>
 
-            <footer class="festival-footer">
-                <p>Copyright, Magnolia City, GA 2024 Final Project Team 2</p>
-            </footer>
-        </main>
-    </body>
- </html>
+        </section>
+
+        <section class="festival-section contact-section" aria-labelledby="contact-heading">
+
+            <h2 id="contact-heading" class="festival-heading contact-heading">
+                Questions or Special Requests?
+            </h2>
+
+            <div class="festival-box contact-box">
+
+                <p>Contact the festival team at:</p>
+
+                <a href="mailto:fall.festival@magnoliacityga.com">
+                    fall.festival@magnoliacityga.com
+                </a>
+
+            </div>
+
+            <p class="follow-text">
+                Follow the festival on social media for updates.
+            </p>
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Facebook homepage in a new tab">
+                    Facebook
+                </a>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit Instagram homepage in a new tab">
+                    Instagram
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer class="festival-footer">
+            <p>
+                Copyright © Magnolia City, GA 2024 Final Project Team 2
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
